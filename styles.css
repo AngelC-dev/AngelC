@@ -1,71 +1,23 @@
 @media screen and (max-width: 600px) {
-    nav a {
+  .left-column {
     float: none;
     width: 100%;
-    }
-    }
-
-    body {
-        background-color: #ffffff;
-        color: #000000;
-        font-family: sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      } 
-      
-      header {
-        padding: 1rem;
-      }
-      
-      h1 {
-        font-size: 2rem;
-        font-weight: 400;
-        margin: 0;
-      }
-      
-      nav {
-        font-size: 0.8rem;
-        padding: 1rem;
-        text-align: center;
-      }
-      
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      
-      li {
-        display: inline-block;
-        padding: 0 1rem;
-      }
-      
-      a {
-        color: #000000;
-        text-decoration: none;
-      }
-      
-      main {
-        padding: 1rem;
-      }
-      
-      h2 {
-       font-size: 1.2rem;
-       font-weight: 400;
-       margin: 0;
-      }
-      
-      section {
-        margin-bottom: 1rem;
-      }
-      
-      footer {
-        padding: 1rem;
-      }
-      
-      p {
-        margin: 0;
-      }
+  }
+  .center-column {
+    float: none;
+    width: 100%;
+  }
+  .right-column {
+    float: none;
+    width: 100%;
+  }
+  .left-column {
+    background-color: blue;
+  }
+  .center-column {
+    background-color: yellow;
+  }
+  .right-column {
+    background-color: green;
+  }
+}

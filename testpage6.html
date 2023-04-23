@@ -1,0 +1,133 @@
+</html>
+
+<head>
+
+    <script type="text/javascript">
+        function changeColors() {
+            //Generate random color
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+
+            //Create pastel color
+            red = Math.round(red * 0.2);
+            green = Math.round(green * 0.2);
+            blue = Math.round(blue * 0.2);
+
+            //Concatenate color components
+            var pastelColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+
+            //Set background color
+            document.body.style.backgroundColor = pastelColor;
+        }
+
+    </script>
+
+<body onload="changeColors();">
+
+
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: Arial;
+            padding: 50px 0;
+        }
+
+        h2 {
+            color: #3696dc;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px
+        }
+
+        ul li {
+            list-style: none
+        }
+
+        
+        .container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            list-style: none
+        }
+
+        .columns {
+            margin: 0 15px 25px;
+            box-shadow: 0 1px 3px rgb(0, 0, 0, 12), 0 1px 3px rgb(0, 0, 0, 24);
+            background: #fff;
+            border-radius: 10px;
+            flex-basis: 33%
+        }
+
+        .card {
+            padding: 10px 25px
+        }
+
+        img {
+            max-width: 428px;
+            max-height: 521px;
+        }
+
+
+        @media screen and (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="card">
+
+
+                    <div style="position: relative;">
+                        <img src="https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=477&height=636"
+                        width="100%" alt="Image" style="border-radius: 10px;">
+                        <span style="position: absolute; color: white; bottom: 10px; left: 10px;"><h2>Angel Cruz</h2></span>
+                    </div>
+
+                    <div style="position: relative;">
+                        <img src="https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=477&height=636"
+                        width="100%" alt="Image" style="border-radius: 10px;">
+                        <span style="position: absolute; color: white; bottom: 10px; left: 10px;"><h2>Angel Cruz</h2></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="columns">
+                    <div class="card">
+                        <h2>Services</h2>
+                        <p>Te amo. Não ligo para o quão imaturo posso ser, parecer. ...
+                        </p>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="columns">
+                        <div class="card">
+                            <h2>Location</h2>
+                            
+                            <p>Não ligo para o quão imaturo posso ser, parecer. ... Amo o seu sorriso</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+    </body>
+
+    </html>

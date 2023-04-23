@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="basicstyles.css">
+
+    <title>AngelC</title>
+
+    <script type="text/javascript">
+        function changeColors() {
+            //Generate random color
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+
+            //Create pastel color
+            red = Math.round(red * 0.2);
+            green = Math.round(green * 0.2);
+            blue = Math.round(blue * 0.2);
+
+            //Concatenate color components
+            var pastelColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+
+            //Set background color
+            document.body.style.backgroundColor = pastelColor;
+        }
+
+    </script>
+
+<body onload="changeColors();">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1 style="color:white;">ANGEL CRUZ</h1>
+            <h5 style="color:white;">Building the Future: Front End to the Blockchain Development</h5>
+        </header>
+        <nav>
+            <a style="color:black;" href="#">Home</a>
+            <a style="color:black;" href="#">About</a>
+            <a style="color:black;" href="portfolio.html">Resume</a>
+            <a style="color:black;" href="#">Contact</a>
+        </nav>
+        <main>
+            <h2 class="w3-text-grey w3-padding-16"><i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        </main>
+
+        <footer>
+            <p style="color:white;">&copy; Get In Touch: TW. IG. LN. BE. M.</p>
+        </footer>
+
+
+
+
+    </body>
+
+</html>
