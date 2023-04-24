@@ -83,71 +83,37 @@ html, body {
                 }
 
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .section h1 {
-      font-size: 3rem;
-    }
-  
-    .section p {
-      font-size: 1.2rem;
-      max-width: 80%;
-    }
-  
-    .section:nth-of-type(1) {
-      background-position: 20px 20px;
-      background-size: 30px 30px;
-    }
+/* Show only the active section */
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.5rem;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* Make the image responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add styles for small screens */
+@media (max-width: 768px) {
+  .section h1 {
+    font-size: 2rem;
   }
   
-  @media screen and (max-width: 480px) {
-    .section h1 {
-      font-size: 2.5rem;
-    }
-  
-    .section p {
-      font-size: 1rem;
-      max-width: 90%;
-    }
-  
-    .section:nth-of-type(1) {
-      background-position: 10px 10px;
-      background-size: 20px 20px;
-    }
-
-    @media screen and (max-width: 360px) {
-      .section h1 {
-        font-size: 2rem;
-      }
-    
-      .section p {
-        font-size: 1rem;
-        max-width: 90%;
-      }
-    
-      .section:nth-of-type(1) {
-        background-position: 5px px;
-        background-size: 10px 10px;
-      }
-    }
-
+  .section p {
+    font-size: 1rem;
+    max-width: 80%;
   }
-
-  @media screen and (max-width: 240px) {
-    .section h1 {
-      font-size: 1.5rem;
-    }
-  
-    .section p {
-      font-size: 1rem;
-      max-width: 90%;
-    }
-  
-    .section:nth-of-type(1) {
-      background-position: 2.5px 2.5px;
-      background-size: 5px 5px;
-    }
-  }
-                                                                     
-
-        
+}
