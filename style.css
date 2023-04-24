@@ -1,0 +1,120 @@
+/* Set the height of the body and html to 100% to ensure full viewport coverage */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the sections */
+  .section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  
+  
+  /* Show only the active section */
+  .section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .section p {
+    font-size: 1.5rem;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .section:nth-of-type(1) {
+    background: #f1f1f1;
+    }
+    
+.section:nth-of-type(1) {
+    background-image: url("https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=429&height=572");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    background-size: 50px 50px;
+    border-radius: 50%;
+    }
+              
+.section:nth-of-type(2) {
+        background: #c29191;
+        }
+        
+.section:nth-of-type(2) {
+        background-image: url("https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=429&height=572");
+        background-repeat: no-repeat;
+        background-position: 50px 50px;
+        background-size: 50px 50px;
+        border-radius: 50%;
+        }
+.section:nth-of-type(3) {
+            background: #4e5485;
+            }
+            
+.section:nth-of-type(3) {
+            background-image: url("https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=429&height=572");
+            background-repeat: no-repeat;
+            background-position: 50px 50px;
+            background-size: 50px 50px;
+            border-radius: 50%;
+            }
+.section:nth-of-type(4) {
+                background: #b18256;
+                }
+                
+.section:nth-of-type(4) {
+                background-image: url("https://media.discordapp.net/attachments/1090958629563269240/1095451865942065212/WhatsApp_Image_2023-04-11_at_16.35.26.jpeg?width=429&height=572");
+                background-repeat: no-repeat;
+                background-position: 50px 50px;
+                background-size: 50px 50px;
+                border-radius: 50%;
+                }
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .section h1 {
+      font-size: 3rem;
+    }
+  
+    .section p {
+      font-size: 1.2rem;
+      max-width: 80%;
+    }
+  
+    .section:nth-of-type(1) {
+      background-position: 20px 20px;
+      background-size: 30px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section h1 {
+      font-size: 2.5rem;
+    }
+  
+    .section p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  
+    .section:nth-of-type(1) {
+      background-position: 10px 10px;
+      background-size: 20px 20px;
+    }
+  }
+                                                                     
+
+        
