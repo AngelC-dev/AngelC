@@ -117,7 +117,7 @@ html, body {
 
     @media screen and (max-width: 360px) {
       .section h1 {
-        font-size: .75rem;
+        font-size: 2rem;
       }
     
       .section p {
@@ -135,7 +135,7 @@ html, body {
 
   @media screen and (max-width: 240px) {
     .section h1 {
-      font-size: .5rem;
+      font-size: 1.5rem;
     }
   
     .section p {
